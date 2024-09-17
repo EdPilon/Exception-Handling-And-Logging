@@ -1,0 +1,17 @@
+2024-09-17 13:17:13.3540|INFO|Exception-Handling-And-Logging.Program|Program started
+2024-09-17 13:17:13.3754|ERROR|Exception-Handling-And-Logging.Program|File does not exist: "dk.csv"
+2024-09-17 13:17:13.3754|INFO|Exception-Handling-And-Logging.Program|Program ended
+2024-09-17 13:17:40.6430|INFO|Exception-Handling-And-Logging.Program|Program started
+2024-09-17 13:17:43.2668|INFO|Exception-Handling-And-Logging.Program|User choice: "2"
+2024-09-17 13:21:39.5101|INFO|Exception-Handling-And-Logging.Program|Program started
+2024-09-17 13:21:46.3554|INFO|Exception-Handling-And-Logging.Program|User choice: "2"
+2024-09-17 13:21:54.7846|INFO|Exception-Handling-And-Logging.Program|User choice: "1"
+2024-09-17 13:23:25.9519|INFO|Exception-Handling-And-Logging.Program|Character id 14 added
+2024-09-17 13:23:28.0012|INFO|Exception-Handling-And-Logging.Program|User choice: "2"
+2024-09-17 13:24:15.4537|INFO|Exception-Handling-And-Logging.Program|User choice: ""
+2024-09-17 13:24:15.4537|INFO|Exception-Handling-And-Logging.Program|Program ended
+2024-09-17 13:26:18.6020|INFO|Exception-Handling-And-Logging.Program|Program started
+2024-09-17 13:26:20.1768|INFO|Exception-Handling-And-Logging.Program|User choice: "1"
+2024-09-17 13:26:21.0945|ERROR|Exception-Handling-And-Logging.Program|You must enter a name
+2024-09-17 13:26:31.5922|INFO|Exception-Handling-And-Logging.Program|User choice: ""
+2024-09-17 13:26:31.5922|INFO|Exception-Handling-And-Logging.Program|Program ended

@@ -6,7 +6,7 @@ var logger = LogManager.Setup().LoadConfigurationFromFile(path).GetCurrentClassL
 
 logger.Info("Program started");
 
-string file = "dk.csv";
+string file = "mario.csv";
 // make sure movie file exists
 if (!File.Exists(file))
 {
@@ -19,6 +19,9 @@ else
     List<UInt64> Ids = [];
     List<string> Names = [];
     List<string?> Descriptions = [];
+    List<string?> Species = [];
+    List<string?> FirstAppearance = [];
+    List<string?> YearCreated = [];
     // to populate the lists with data, read from the data file
     try
     {
@@ -38,6 +41,12 @@ else
                 Names.Add(characterDetails[1]);
                 // 3rd array element contains character description
                 Descriptions.Add(characterDetails[2]);
+                // 4th array element contains species
+                Species.Add(characterDetails[2]);
+                // 5th array element contains first appearance
+                FirstAppearance.Add(characterDetails[2]);
+                // 6th array element contains year created
+                YearCreated.Add(characterDetails[2]);
             }
         }
         sr.Close();
@@ -77,15 +86,24 @@ else
                     // input character description
                     Console.WriteLine("Enter description:");
                     string? Description = Console.ReadLine();
+                    Console.WriteLine("Enter species:");
+                    string? species = Console.ReadLine();
+                    Console.WriteLine("Enter first appearance:");
+                    string? firstAppearance = Console.ReadLine();
+                    Console.WriteLine("Enter year created:");
+                    string? yearCreated = Console.ReadLine();
                     // Console.WriteLine($"{Id}, {Name}, {Description}");
                     // create file from data
                     StreamWriter sw = new(file, true);
-                    sw.WriteLine($"{Id},{Name},{Description}");
+                    sw.WriteLine($"{Id},{Name},{Description},{species},{firstAppearance},{yearCreated}");
                     sw.Close();
                     // add new character details to Lists
                     Ids.Add(Id);
                     Names.Add(Name);
                     Descriptions.Add(Description);
+                    Species.Add(species);
+                    FirstAppearance.Add(firstAppearance);
+                    YearCreated.Add(yearCreated);
                     // log transaction
                     logger.Info($"Character id {Id} added");
                 }
@@ -103,6 +121,9 @@ else
                 Console.WriteLine($"Id: {Ids[i]}");
                 Console.WriteLine($"Name: {Names[i]}");
                 Console.WriteLine($"Description: {Descriptions[i]}");
+                Console.WriteLine($"Species: {Species[i]}");
+                Console.WriteLine($"First Appearance: {FirstAppearance[i]}");
+                Console.WriteLine($"Year Created: {YearCreated[i]}");
                 Console.WriteLine();
             }
         }
