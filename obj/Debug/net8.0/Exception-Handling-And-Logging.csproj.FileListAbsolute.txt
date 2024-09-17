@@ -17,3 +17,4 @@ C:\Users\eap66\OneDrive\Documents\GitHub\DotNet\Exception-Handling-And-Logging\o
 C:\Users\eap66\OneDrive\Documents\GitHub\DotNet\Exception-Handling-And-Logging\obj\Debug\net8.0\Exception-Handling-And-Logging.pdb
 C:\Users\eap66\OneDrive\Documents\GitHub\DotNet\Exception-Handling-And-Logging\obj\Debug\net8.0\Exception-Handling-And-Logging.genruntimeconfig.cache
 C:\Users\eap66\OneDrive\Documents\GitHub\DotNet\Exception-Handling-And-Logging\obj\Debug\net8.0\ref\Exception-Handling-And-Logging.dll
+C:\Users\eap66\OneDrive\Documents\GitHub\DotNet\Exception-Handling-And-Logging\obj\Debug\net8.0\Exception-Handling-And-Logging.sourcelink.json

@@ -86,26 +86,44 @@ else
                     // input character description
                     Console.WriteLine("Enter description:");
                     string? Description = Console.ReadLine();
-                    Console.WriteLine("Enter species:");
-                    string? species = Console.ReadLine();
-                    Console.WriteLine("Enter first appearance:");
-                    string? firstAppearance = Console.ReadLine();
-                    Console.WriteLine("Enter year created:");
-                    string? yearCreated = Console.ReadLine();
-                    // Console.WriteLine($"{Id}, {Name}, {Description}");
-                    // create file from data
-                    StreamWriter sw = new(file, true);
-                    sw.WriteLine($"{Id},{Name},{Description},{species},{firstAppearance},{yearCreated}");
-                    sw.Close();
-                    // add new character details to Lists
-                    Ids.Add(Id);
-                    Names.Add(Name);
-                    Descriptions.Add(Description);
-                    Species.Add(species);
-                    FirstAppearance.Add(firstAppearance);
-                    YearCreated.Add(yearCreated);
-                    // log transaction
-                    logger.Info($"Character id {Id} added");
+                    if (!string.IsNullOrEmpty(Description)){
+                        Console.WriteLine("Enter species:");
+                        string? species = Console.ReadLine();
+                        if (!string.IsNullOrEmpty(species)){
+                            Console.WriteLine("Enter first appearance:");
+                            string? firstAppearance = Console.ReadLine();
+                            if (!string.IsNullOrEmpty(firstAppearance)){
+                                Console.WriteLine("Enter year created:");
+                                string? yearCreated = Console.ReadLine();
+                                if (!string.IsNullOrEmpty(yearCreated)){
+                                    StreamWriter sw = new(file, true);
+                                    sw.WriteLine($"{Id},{Name},{Description},{species},{firstAppearance},{yearCreated}");
+                                    sw.Close();
+                                    // add new character details to Lists
+                                    Ids.Add(Id);
+                                    Names.Add(Name);
+                                    Descriptions.Add(Description);
+                                    Species.Add(species);
+                                    FirstAppearance.Add(firstAppearance);
+                                    YearCreated.Add(yearCreated);
+                                    // log transaction
+                                    logger.Info($"Character id {Id} added");
+                                }
+                                else{
+                                    logger.Error("Year created cannot be empty");
+                                }
+                            }
+                            else{
+                                logger.Error("First appearance cannot be empty");
+                            }  
+                        }
+                        else{
+                            logger.Info($"Species cannot be empty");
+                        }
+                    }
+                    else{
+                        logger.Info($"Description cannot be empty");
+                    }
                 }
             } else {
                 logger.Error("You must enter a name");

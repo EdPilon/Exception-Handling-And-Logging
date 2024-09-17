@@ -15,3 +15,13 @@
 2024-09-17 13:26:21.0945|ERROR|Exception-Handling-And-Logging.Program|You must enter a name
 2024-09-17 13:26:31.5922|INFO|Exception-Handling-And-Logging.Program|User choice: ""
 2024-09-17 13:26:31.5922|INFO|Exception-Handling-And-Logging.Program|Program ended
+2024-09-17 13:44:14.1258|INFO|Exception-Handling-And-Logging.Program|Program started
+2024-09-17 13:44:16.8648|INFO|Exception-Handling-And-Logging.Program|User choice: "1"
+2024-09-17 13:45:13.3726|INFO|Exception-Handling-And-Logging.Program|Species cannot be empty
+2024-09-17 13:45:33.0723|INFO|Exception-Handling-And-Logging.Program|User choice: "1"
+2024-09-17 13:45:55.4125|ERROR|Exception-Handling-And-Logging.Program|First appearance cannot be empty
+2024-09-17 13:45:59.8752|INFO|Exception-Handling-And-Logging.Program|User choice: "1"
+2024-09-17 13:46:26.9920|ERROR|Exception-Handling-And-Logging.Program|Year created cannot be empty
+2024-09-17 13:46:31.0336|INFO|Exception-Handling-And-Logging.Program|User choice: "1"
+2024-09-17 13:47:06.2924|INFO|Exception-Handling-And-Logging.Program|Character id 15 added
+2024-09-17 13:47:08.5027|INFO|Exception-Handling-And-Logging.Program|User choice: "2"
